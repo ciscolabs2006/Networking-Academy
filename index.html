@@ -1,97 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCNA Certification Course</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>CCNA Certification Course</h1>
-    </header>
-
-    <section id="introduction">
-        <h2>Introduction</h2>
-        <p>The CCNA (Cisco Certified Network Associate) course is a comprehensive program designed to equip students with fundamental and advanced networking skills. Over three months, participants will explore various networking aspects, including routing and switching technologies, WAN technologies, infrastructure services, security fundamentals, and network programmability. The course combines virtual lectures, hands-on labs, and real-world scenarios to prepare students thoroughly for the CCNA certification exam.</p>
-        <p>You can read more about CCNA <a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html">here</a>.</p>
-    </section>
-
-    <section id="course_details">
-        <h2>What is CCNA?</h2>
-        <p>CCNA stands for Cisco Certified Network Associate, a globally recognized certification offered by Cisco Systems. This certification validates your ability to install, configure, operate, and troubleshoot medium-sized routed and switched networks.</p>
-        <ul>
-            <li>Network Technician</li>
-            <li>Network Administrator</li>
-            <li>Cybersecurity Specialist</li>
-            <li>Network Engineer</li>
-        </ul>
-        <h3>Course Structure</h3>
-        <ul>
-            <li><strong>Introduction to Networks (CCNA 1)</strong>: Covers the basics of network fundamentals, architectures, and models.</li>
-            <li><strong>Switching, Routing, and Wireless Essentials (CCNA 2)</strong>: Focuses on switching technologies, routing protocols, and wireless network configuration.</li>
-            <li><strong>Enterprise Networking, Security, and Automation (CCNA 3)</strong>: Delves into advanced topics like enterprise networking, security concepts, and network automation.</li>
-        </ul>
-    </section>
-
-    <section id="benefits">
-        <h2>Benefits of CCNA Certification</h2>
-        <ul>
-            <li><strong>Enhanced Knowledge and Skills</strong>: Gain a deep understanding of networking concepts, technologies, and protocols essential for modern networks.</li>
-            <li><strong>Improved Job Prospects</strong>: The CCNA certification is highly valued by employers worldwide, enhancing your employability and career advancement opportunities.</li>
-            <li><strong>Global Recognition</strong>: Being globally recognized, the certification allows you to explore career opportunities across different countries.</li>
-            <li><strong>Foundation for Advanced Certifications</strong>: CCNA serves as a prerequisite for advanced Cisco certifications, enabling you to specialize in areas like cybersecurity, cloud networking, and more.</li>
-        </ul>
-    </section>
-
-    <section id="enrollment">
-        <h2>Entry Requirements</h2>
-        <p>For DeKUT Students: All registered DeKUT students enrolled in any diploma or undergraduate course are eligible to enrol.</p>
-        <p>For Non-DeKUT Students: Must have completed KCSE or equivalent educational qualification.</p>
-
-        <h2>Mode of Learning</h2>
-        <h3>Online Classes</h3>
-        <p>Schedule: Tuesdays, 5:30 PM to 6:30 PM.</p>
-        <p>Duration: 3 months.</p>
-        <p>Requirements:</p>
-        <ul>
-            <li>Access to a laptop or PC.</li>
-            <li>Reliable internet connection.</li>
-        </ul>
-
-        <h2>Course Fees</h2>
-        <p>CCNA: Introduction to Networks KES 5,000</p>
-        <p>CCNA: Switching, Routing, and Wireless Essentials KES 6,500</p>
-        <p>CCNA: Enterprise Networking, Security, and Automation KES 6,500</p>
-        <p>Non-DeKUT Students: KES 22,000 (all the three modules)</p>
-        <p>The fee includes:</p>
-        <ul>
-            <li>Training sessions</li>
-            <li>Tutorials</li>
-            <li>Practical assessments</li>
-            <li>Training examination fees</li>
-            <li>Training certificate</li>
-        </ul>
-
-        <h2>Registration</h2>
-        <p>To enrol in the CCNA course, follow these steps:</p>
-        <ol>
-            <li>Pay the Registration Fee (KES 500) via the following link <a href="https://dekutservices.dkut.ac.ke/Payment/ApplicationFeePayment">here</a></li>
-            <li>Register for the course by providing student details via this <a href="https://admissions.dkut.ac.ke/courses/123">link</a>.</li>
-        </ol>
-
-        <h2>Upcoming Intake:</h2>
-        <p>Start Date: 1st October 2024</p>
-        <p>Ensure you complete the registration process before the start date.</p>
-    </section>
-
-    <footer>
-        <h2>Contact Information</h2>
-        <p>For any inquiries or additional information, feel free to reach out: Email: ciscoacademy@dkut.ac.ke</p>
-        <p><a href="https://chat.whatsapp.com/EgKFnUMCXWFKs2YuWTIU2H">WhatsApp Group</a>: Join the DeKUT Cisco Networking Academy WhatsApp Group for updates and community support.</p>
-        <p>We look forward to welcoming you to the CCNA program and supporting you on your journey to becoming a certified networking professional!</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>DeKUT Cisco Networking Academy</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="home">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#home"><!--<img src="assets/img/navbar-logo.svg" alt="..." />-->DeKUT Cisco Academy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#our_academy">OUR ACADEMY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Welcome To </div>
+                <div class="masthead-heading text-uppercase">DeKUT Cisco Networking Academy</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#our_academy">Get Started</a>
+            </div>
+        </header>
+        <!-- SOur Academy-->
+        <section class="page-section" id="our_academy">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Academy</h2>
+                    <h3 class="section-subheading text-muted">Take your lead in the fast paced technological era with us</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa-solid fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Beginner Friendly</h4>
+                        <p class="text-muted">Our Programs are designed to accommodate learners of all levels, making them perfect for beginners. With easy-to-follow lessons and foundational concepts, students can build a strong understanding of networking from the ground up.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Online Learning</h4>
+                        <p class="text-muted">Our academy offers a fully online learning experience, allowing students to access course materials, lectures, and practical exercises from anywhere. This ensures a seamless learning journey with the convenience of remote access.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa-regular fa-calendar-check fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Flexible Schedule</h4>
+                        <p class="text-muted">Our flexible programs are tailored to fit diverse schedules. Whether you're a working professional or a full-time student, you can set your own pace and learn at times that suit you best.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Programs Grid-->
+        <section class="page-section bg-light" id="programs">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Programs</h2>
+                    <h3 class="section-subheading text-muted">Explore our diverse array of courses</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- programs item 1-->
+                        <div class="programs-item">
+                            <a class="programs-link" data-bs-toggle="modal" href="#programsModal1">
+                                <div class="programs-hover">
+                                    <div class="programs-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/programs/ccna1C.png" alt="..." />
+                            </a>
+                            <div class="programs-caption">
+                                <div class="programs-caption-heading">CCNA 1</div>
+                                <div class="programs-caption-subheading text-muted">Introduction to Networks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- programs item 2-->
+                        <div class="programs-item">
+                            <a class="programs-link" data-bs-toggle="modal" href="#programsModal2">
+                                <div class="programs-hover">
+                                    <div class="programs-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/programs/ccna2C.png" alt="..." />
+                            </a>
+                            <div class="programs-caption">
+                                <div class="programs-caption-heading">CCNA 2</div>
+                                <div class="programs-caption-subheading text-muted">Switching, Routing and Wireless Essentials</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- programs item 3-->
+                        <div class="programs-item">
+                            <a class="programs-link" data-bs-toggle="modal" href="#programsModal3">
+                                <div class="programs-hover">
+                                    <div class="programs-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/programs/ccna3C.png" alt="..." />
+                            </a>
+                            <div class="programs-caption">
+                                <div class="programs-caption-heading">CCNA 3</div>
+                                <div class="programs-caption-subheading text-muted">Enterprise Networking, Automation and Network Security</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        
+                        <!-- programs item 4-->
+                        <div class="programs-item">
+                            <a class="programs-link" data-bs-toggle="modal" href="#programsModal4">
+                                <div class="programs-hover">
+                                    <div class="programs-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/programs/linux_essentials.png" alt="..." />
+                            </a>
+                            <div class="programs-caption">
+                                <div class="programs-caption-heading">LFS101</div>
+                                <div class="programs-caption-subheading text-muted">Linux Essentials</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- programs item 5-->
+                        <div class="programs-item">
+                            <a class="programs-link" data-bs-toggle="modal" href="#programsModal5">
+                                <div class="programs-hover">
+                                    <div class="programs-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/programs/intro_cyber_security.png" alt="..." />
+                            </a>
+                            <div class="programs-caption">
+                                <div class="programs-caption-heading">Cyber Security</div>
+                                <div class="programs-caption-subheading text-muted">Introduction to Cyber Security</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- programs item 6-->
+                        <div class="programs-item">
+                            <a class="programs-link" data-bs-toggle="modal" href="#programsModal6">
+                                <div class="programs-hover">
+                                    <div class="programs-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/programs/ethical_hacking.jpg" alt="..." />
+                            </a>
+                            <div class="programs-caption">
+                                <div class="programs-caption-heading">Ethical Hacking</div>
+                                <div class="programs-caption-subheading text-muted">Introduction to Ethical Hacking</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--events-->
+        <section class="page-section" id="events">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Events</h2>
+                    <h3 class="section-subheading text-muted">Our Series of Events</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/events/CCNA_Enrollment_Procedure.png" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>01 September 2024</a> </h4>
+                               <h4 class="subheading">Registrations Open</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Registrations for all courses open for intrested learners: DeKUT students, non-DeKUT students and International students</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/events/Virtual_Open_Day.png" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>20 September 2024</h4>
+                                <h4 class="subheading">Virtual Open Day</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">DeKUT Cisco Academy Open Day aimed to deliver insights of our cutting edge courses and to respond to any questions of concern. Inattendance will be Miss Catherine Masinde, Cisco Academy Support Admin</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/events/approved_stamp.jpeg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>30 September 2024</h4>
+                                <h4 class="subheading">Approval all Applications</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Approval of all Applications and disbursement of learning schedules to learners ahead of program kick-off. </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/events/students.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>1 October 2024</h4>
+                                <h4 class="subheading">Cohort Flagship</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">The presiding cohort officially kicks off with the 5 weeks intensive learning, interractive lessons and hands on experience working on real world problems and projects</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                GET
+                                <br />
+                                CERTIFIED
+                                <br />
+                                TODAY!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    -->
+<!--Testimonies -->
+        <section class="page-section bg-light" id="testimonials">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Testimonies</h2>
+                    <h3 class="section-subheading text-muted">Hear from Our Academy Alumni</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-41">
+                        <div class="testimonials-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/testimonials/stephen_quadross.jpg" alt="..." />
+                            <h4>Stephen Quadross</h4>
+                            <p class="text-muted">ICT Intern</p>
+                            <p>Completing CCNA 1-3 and earning a CyberOps certification opened numerous doors for me. My solid foundation in networking led to an attachment at Next Technologies Limited, where I gained hands-on experience in a professional environment. This experience, combined with the knowledge I acquired, played a crucial role in securing an internship at the ICT Directorate of Dedan Kimathi University of Technology after graduation. The skills and opportunities provided by the DeKUT CCNA Academy have truly set the stage for my career in the IT industry.</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://x.com/QuadrosStephen" aria-label="Stephen Quadross Twitter Profile" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://wa.me/254791065938" aria-label="Stephen Quadross Whatsapp Profile" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/stephen-quadross-otieno-9549b4214/" aria-label="Stephen Quadross LinkedIn Profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="col-lg-4">
+                        <div class="testimonials-member">
+                            
+                            <img class="mx-auto rounded-circle" src="assets/img/testimonials/2.jpg" alt="..." />
+                            <h4>Diana Petersen</h4>
+                            <p class="text-muted">Lead Marketer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Whatsapp Profile" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                -->
+                    <div class="col-lg-41">
+                        <div class="testimonials-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/testimonials/jervis_asuma.jpg" alt="..." />
+                            <h4>Jervis Asuma</h4>
+                            <p class="text-muted">ICT Intern</p>
+                            <p>I first came across CCNA after high school while contemplating a course and career path in Technology . Four years later, I got an opportunity to pursue the CCNA course at Dedan Kimathi University, and it turned out to be one of the best decisions I've made. The knowledge and skills I gained through the course helped me secure an internship at the institution, showcasing the certification's strong reputation and long-standing value in the IT industry.</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://x.com/kenty0ops?s=09" aria-label="Jervis Asuma Twitter Profile" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://wa.me/254769267176" aria-label="Jervis Asuma Whatsapp Profile" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/jervis-asuma-4b9379228/" aria-label="Jervis Asuma LinkedIn Profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Unlock your potential in the fast advancing technological world with the DeKUT CCNA Academy—where expert guidance, hands-on experience, and globally recognized certifications pave the way for your success in the fast-evolving tech industry.</div>
+            </div>
+        </section>
+        <!-- Clients
+        <div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    -->
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Via email on: ciscoacademy@dkut.ac.ke</h3>
+                    <h3 class="section-subheading text-muted">For Complaints or Complements.</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" action="https://formsubmit.co/ciscoacademy@dkut.ac.ke" method="POST">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Your Name *" required />
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="email" name="email" type="email" placeholder="Your Email *" required />
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="Your Phone *" required />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <textarea class="form-control" id="message" name="message" placeholder="Your Message *" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                        </div>
+                    </div>
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                    </div>
+                    <div class="text-center">
+                        <!--Preventing reCapture Prompt-->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!--Multiples of cc emails to receive forms-->
+                        <input type="hidden" name="_cc" value="quadrossstephen@gmail.com,jervisa88@gmail.com">
+                        <!--Thank You Page -->
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                        <!--Response Table Template-->
+                        <input type="hidden" name="_template" value="table">
+                        <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">&copy; DeKUT CCNA ACADEMY 2024</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <!--<a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>-->
+                        <a class="btn btn-dark btn-social mx-2" href="https://chat.whatsapp.com/EgKFnUMCXWFKs2YuWTIU2H" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <!--<a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>-->
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- programs Modals-->
+        <!-- programs item 1 modal popup-->
+        <div class="programs-modal modal fade" id="programsModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">CCNA 1</h2>
+                                    <p class="item-intro text-muted">Introduction To Networks</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/programs/ccna1C.png" alt="..." />
+                                    <p>This module covers the fundamentals of networking, including the OSI and TCP/IP models, Ethernet, and IP addressing (IPv4/IPv6). Students learn to configure basic network devices like routers and switches, perform simple troubleshooting, and understand basic security concepts. This course lays the groundwork for advanced networking topics in later CCNA modules.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Course Duration:</strong>
+                                            5 Weeks
+                                        </li>
+                                        <li>
+                                            <strong>Cost</strong>
+                                            Ksh. 5,000
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fa-solid fa-arrow-pointer"></i>
+                                        <a href="https://admissions.dkut.ac.ke/courses/123" target="_blank"><strong>ENROLL</strong></a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- programs item 2 modal popup-->
+        <div class="programs-modal modal fade" id="programsModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">CCNA 2</h2>
+                                    <p class="item-intro text-muted">Switching and Routing Essentials</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/programs/ccna2C.png" alt="..." />
+                                    <p>CCNA 2 focuses on configuring and troubleshooting routers, switches, and wireless networks in small to medium-sized enterprises. Key topics include VLANs, static and dynamic routing, and network security. Students also explore wireless network fundamentals and gain practical skills in managing and securing network devices. This course builds on the foundational knowledge from CCNA 1, preparing students for more complex networking tasks.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Course Duration:</strong>
+                                            5 Weeks
+                                        </li>
+                                        <li>
+                                            <strong>Cost:</strong>
+                                            Ksh. 6,500
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fa-solid fa-arrow-pointer"></i>
+                                        <a href="https://admissions.dkut.ac.ke/courses/123" target="_blank">ENROLL</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- programs item 3 modal popup-->
+        <div class="programs-modal modal fade" id="programsModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">CCNA 3</h2>
+                                    <p class="item-intro text-muted">Enterprise Networking, Network Security and Automation</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/programs/ccna3C.png" alt="..." />
+                                    <p>CCNA 3 delves into advanced networking concepts, including scalable network design, advanced routing protocols (like OSPF and EIGRP), and network security solutions. Students also explore the automation of network tasks using tools like Python and understand how virtualization and SDN (Software-Defined Networking) shape modern enterprise networks. This final course prepares students for real-world networking environments and the CCNA certification exam.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Course Duration:</strong>
+                                            5 Weeks
+                                        </li>
+                                        <li>
+                                            <strong>Cost:</strong>
+                                            Ksh. 6,500
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fa-solid fa-arrow-pointer"></i>
+                                        <a href="https://admissions.dkut.ac.ke/courses/123" target="_blank">ENROLL</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- programs item 4 modal popup-->
+        <div class="programs-modal modal fade" id="programsModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">LFS101</h2>
+                                    <p class="item-intro text-muted">Linux Essentials</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/programs/linux_essentials.png" alt="..." />
+                                    <p>Linux Essential Courswork provides a beginner-friendly introduction to the Linux operating system. The course covers essential topics like the Linux command line, file system navigation, basic shell scripting, and managing files and directories. Students also learn about user management, permissions, and basic system administration tasks. This course equips learners with foundational Linux skills, making it ideal for those new to the platform or preparing for more advanced Linux certifications.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Course Duration:</strong>
+                                            Self-paced 
+                                        </li>
+                                        <li>
+                                            <strong>Cost:</strong>
+                                            Free
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fa-solid fa-arrow-pointer"></i>
+                                        <a href="https://www.netacad.com/courses/linux-essentials?courseLang=en-US" target="_blank">ENROLL</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- programs item 5 modal popup-->
+        <div class="programs-modal modal fade" id="programsModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Cyber Security</h2>
+                                    <p class="item-intro text-muted">Introduction To Cyber Security.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/programs/intro_cyber_security.png" alt="..." />
+                                    <p>This course introduces the key principles of cybersecurity, covering the basics of online threats, data protection, and risk management. Students explore topics such as network security, encryption, malware, and secure practices for both individuals and organizations. The course provides a foundational understanding of cybersecurity concepts, preparing learners for more advanced study and helping them recognize and mitigate common cyber threats.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Course Duration:</strong>
+                                            Self-paced 
+                                        </li>
+                                        <li>
+                                            <strong>Cost:</strong>
+                                            Free
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fa-solid fa-arrow-pointer"></i>
+                                        <a href="https://www.netacad.com/courses/introduction-to-cybersecurity?courseLang=en-US" target="_blank">ENROLL</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- programs item 6 modal popup-->
+        <div class="programs-modal modal fade" id="programsModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ethical Hacking</h2>
+                                    <p class="item-intro text-muted">Introduction To Ethical Hacking</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/programs/ethical_hacking.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Course Duration:</strong>
+                                            Self-Paced
+                                        </li>
+                                        <li>
+                                            <strong>Cost:</strong>
+                                            Free
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fa-solid fa-arrow-pointer"></i>
+                                        <a href="https://www.netacad.com/courses/ethical-hacker?courseLang=en-US" target="_blank">ENROLL</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
